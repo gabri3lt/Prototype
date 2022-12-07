@@ -1,3 +1,1 @@
-# goit-markup-hw-07
-
-GOIT-kurs
+# goit-markup-hw-08
