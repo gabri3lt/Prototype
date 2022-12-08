@@ -81,11 +81,12 @@
 }
 .menu-contact {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   max-width: 400px;
   justify-content: flex-start;
   justify-items: baseline;
-  gap: 30px;
+  gap: 10px;
   list-style: none;
 
   &__link {
@@ -106,5 +107,12 @@
   }
   &__icon {
     vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-nav,
+  .menu-contact {
+    display: none;
   }
 }

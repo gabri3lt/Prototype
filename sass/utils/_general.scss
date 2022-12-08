@@ -11,16 +11,26 @@ body {
 
 nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-start;
   height: 80px;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 100vw;
   }
 
   @media screen and (min-width: 1200px) {
@@ -37,6 +47,7 @@ nav {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 0;
+  padding-right: 0;
 }
 
 .section-title {
@@ -85,4 +96,11 @@ nav {
   letter-spacing: 0.03em;
   padding-bottom: 20px;
   color: var(--color5);
+}
+
+@media screen and (min-width: 768px) {
+  .page_header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
